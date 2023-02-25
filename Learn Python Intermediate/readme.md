@@ -23,10 +23,15 @@
 - case sensitive
 - don't overwrite keywords
 
-# developer fundamentals I
+# developer fundamentals i
 
 - Become really good at googling (or asking chatgpt) how to do things
 - rawr
 - Don't read the dictionary.
 - It's not necessary to learn everything, become good at resourcing
 - I will become good at a programming language when I use the language
+
+# developer fundamentals ii
+
+- code needs to read like English
+- comment code that is easy to read, not on stuff that is self explanatory

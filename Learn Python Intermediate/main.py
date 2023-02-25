@@ -1,3 +1,5 @@
+# This python file is for the Learn Python Intermediate course on Udemy
+
 # Fundamental Data Types
 # int and float
 # Arithmetic Operators
@@ -50,3 +52,274 @@ print(user_age)
 PI = 3.14
 
 # do not use __ notation with variables
+
+a, b, c = 1, 2, 3
+
+a = 1
+
+print(a)
+print(b)
+print(c)
+
+
+# expressions and statements
+
+iq = 100
+user_age = iq / 5
+
+
+# augmented assignment operator
+some_value = 5
+some_value *= 2
+print(some_value)
+
+# strings
+# strings are immutable
+# strings are ordered
+# strings can be indexed
+# strings can be sliced
+# strings can be concatenated
+# strings can be repeated
+# strings can be escaped
+# strings can be formatted
+# strings can be raw
+print(type('hi hello there 24'))
+username = 'supercoder'
+password = 'supersecret'
+
+# long strings
+long_string = '''
+WOW
+0 0
+___
+'''
+print(long_string)
+first_name = 'John'
+last_name = 'Smith'
+full_name = first_name + ' ' + last_name
+print(full_name)
+
+# string concatenation
+print('hello' + ' ' + 'world')
+
+# type conversion
+print(type(int(str(100))))
+# or
+a = str(100)
+b = int(a)
+c = type(b)
+print(c)
+
+
+# escape sequences
+weather = '\t It\'s \"kind of\" sunny \n hope you have a good day'
+print(weather)
+
+# formatted strings
+name = 'John'
+age = 55
+print(f'hi {name}. You are {age} years old.')
+
+# string indexes
+selfish = '01234567'
+# [start:stop:stepover]
+print(selfish[0:8:2])
+# [start:stop:stepover]
+print(selfish[0:])
+# [start:stop:stepover]
+print(selfish[:8])
+# [start:stop:stepover]
+print(selfish[::2])
+# [start:stop:stepover]
+print(selfish[::-1])
+
+# immutability
+# selfish[0] = '9'
+# print(selfish)
+
+# built in functions + methods
+quote = 'to be or not to be'
+print(len(quote))
+print(quote.upper())
+print(quote.capitalize())
+print(quote.find('be'))
+print(quote.replace('be', 'me'))
+
+# booleans
+# True
+# False
+# None
+name = 'John Smith'
+is_cool = False
+is_cool = True
+
+# bool function
+print(bool(0))
+print(bool(1))
+print(bool(''))
+print(bool('hello'))
+print(bool([]))
+print(bool([0, 1, 2]))
+print(bool({}))
+print(bool({1: 'a'}))
+print(bool(None))
+
+# type conversion
+name = 'John Smith'
+age = 20
+relationship_status = 'single'
+relationship_status = 'it\'s complicated'
+print(relationship_status)
+
+birth_year = input('What year were you born? ')
+age = 2023 - int(birth_year)
+print(f'Your age is: {age}')
+
+# password checker
+
+username = input('Enter your username: ')
+password = input('Enter your password: ')
+passwordlength = len(password)
+
+print(f'{username}, your password {"*" * passwordlength} is {passwordlength} characters long')
+
+# lists
+# ordered
+# iterable
+# mutable
+# can contain different data types
+# can contain duplicates
+# can be indexed and sliced
+# can be concatenated and repeated
+# can be sorted     .sort()
+# can be reversed   .reverse()
+# can be joined     .join()
+# can be appended   .append()
+# can be popped     .pop()
+# can be removed    .remove()
+# can be inserted   .insert()
+# can be cleared    .clear()
+# can be reversed   .reverse()
+# can be copied     .copy()
+# can be extended   .extend()
+# can be counted    .count()
+# can be indexed    .index()
+# can be sliced     [start:stop:stepover]
+
+# list
+
+amazon_cart = ['notebooks', 'sunglasses']
+print(amazon_cart[2])
+
+# list slicing
+
+amazon_cart = ['notebooks',
+               'sunglasses',
+               'toys',
+               'grapes'
+               ]
+
+amazon_cart[0] = 'laptop'
+new_cart = amazon_cart[:]
+new_cart[0] = 'gum'
+print(new_cart)
+print(amazon_cart)
+
+# matrix
+matrix = [
+    [1, 5, 1],
+    [0, 1, 0],
+    [1, 0, 1]
+]
+
+print(matrix[0][1])
+
+# list methods
+basket = [1, 2, 3, 4, 5]
+print(len(basket))
+
+# list methods
+basket = [1, 2, 3, 4, 5]
+
+# adding to the end of a list
+basket.append(100)
+new_list = basket
+print(new_list)  # [1, 2, 3, 4, 5, 100]
+
+# adding to the beginning of a list
+basket.insert(5, 100)
+new_list = basket
+print(new_list)  # [1, 2, 3, 4, 5, 100, 100]
+
+# extending a list
+basket.extend([100, 101])
+new_list = basket
+print(new_list)  # [1, 2, 3, 4, 5, 100, 100, 100, 101]
+
+# popping from a list
+basket.pop()
+basket.pop(0)
+new_list = basket
+print(new_list)  # [2, 3, 4, 5, 100, 100, 100]
+
+# removing from a list
+basket.remove(5)
+new_list = basket
+print(new_list)  # [2, 3, 4, 100, 100, 100]
+
+# clearing a list
+basket.clear()
+new_list = basket
+print(new_list)  # []
+
+# index of an item in a list
+basket = ['a', 'b', 'c', 'd', 'e']
+
+print(basket.index('d'))  # 3
+
+# is an item in a list
+
+print('d' in basket)  # True
+print('x' in basket)  # False
+
+# count of an item in a list
+basket = ['a', 'b', 'c', 'd', 'e', 'd']
+print(basket.count('d'))  # 2
+
+# sorting a list
+basket = ['a', 'x', 'b', 'c', 'd', 'e', 'd']
+# basket.sort()
+new_basket = basket[:]
+new_basket.sort()
+print(new_basket)  # ['a', 'b', 'c', 'd', 'd', 'e', 'x']
+print(sorted(basket))  # ['a', 'b', 'c', 'd', 'd', 'e', 'x']
+print(basket)  # ['a', 'x', 'b', 'c', 'd', 'e', 'd']
+
+# copying a list
+basket = ['a', 'x', 'b', 'c', 'd', 'e', 'd']
+new_basket = basket.copy()
+print(new_basket)  # ['a', 'x', 'b', 'c', 'd', 'e', 'd']
+
+# reversing a list
+basket = ['a', 'x', 'b', 'c', 'd', 'e', 'd']
+basket.sort()
+basket.reverse()
+print(basket)  # ['x', 'e', 'd', 'd', 'c', 'b', 'a']
+
+# range
+print(list(range(1, 100)))
+
+# joining lists
+new_sentence = ' '.join(['hi', 'my', 'name', 'is', 'Sarah'])
+
+print(new_sentence)
+
+# list unpacking
+a, b, c, *other = [1, 2, 3]
+
+print(a)
+print(b)
+print(c)
+print(other)
+
+# None - absence of value or data
