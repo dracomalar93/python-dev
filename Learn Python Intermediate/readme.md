@@ -23,7 +23,7 @@
 - case sensitive
 - don't overwrite keywords
 
-# Notes
+# developer fundamentals I
 
 - Become really good at googling (or asking chatgpt) how to do things
 - rawr
