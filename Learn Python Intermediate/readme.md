@@ -35,3 +35,10 @@
 
 - code needs to read like English
 - comment code that is easy to read, not on stuff that is self explanatory
+
+# developer fundamentals iii
+
+- know when to use what data structure
+- dictionary has no order
+- a list has an order
+- dictionary holds more information

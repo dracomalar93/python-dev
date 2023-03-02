@@ -1,4 +1,6 @@
 # This python file is for the Learn Python Intermediate course on Udemy
+# DO NOT RUN AS A PROGRAM
+# this file is for notes only
 
 # Fundamental Data Types
 # int and float
@@ -323,3 +325,107 @@ print(c)
 print(other)
 
 # None - absence of value or data
+
+# Dictionary
+dictionary = {
+    'a': 1,
+    'b': 2,
+    'c': 3
+}
+
+print(dictionary['b'])
+
+# Dictionary
+# unordered key value pairs
+
+# dictionary = {key: value for key, value in dictionary.items()}
+
+dictionary = {
+    'weapons': [1, 2, 3],
+    'greeting': 'hello',
+    'is_Magic': True
+}
+
+
+print(dictionary.keys())  # ['123', 'b', 'c', 'x']
+print(dictionary.values())  # [1, 2, 3, True]
+# [('123', [1, 2, 3]), ('b', 'hello'), ('c', 3), ('x', True)]
+print(dictionary.items())
+
+user = {
+    'basket': [1, 2, 3],
+    'greet': 'hello',
+    'age': 20
+}
+
+print(user.get('age'))  # 20
+
+print('basket' in user)  # True
+
+print('age' in user.keys())  # True
+print('hello' in user.values())  # True
+user.clear()
+print(user)  # None
+
+user2 = dict(name='JohnJohn')
+print(user2)  # {'name': 'JohnJohn'}
+
+user.update()  # updates the dictionary values with the new values
+
+# Tuples
+# immutable
+
+my_tuple = (1, 2, 3, 4, 5)
+print(5 in my_tuple)  # True
+
+# why tuples vs lists?
+# tuples are immutable
+# lists are mutable
+# faster than lists
+# when we don't want to modify the list, we can use tuples
+
+# sets
+# immutable
+# unordered collection of unique objects
+# no duplicate values
+# no indexing in sets
+
+my_list = [1, 2, 3, 4, 5, 5]
+# convert to set
+set(my_list)  # {1, 2, 3, 4, 5}
+
+my_set = {1, 2, 3, 4, 5}
+# convert to list
+list(my_set)  # [1, 2, 3, 4, 5]
+
+my_set = {1, 2, 3, 4, 5}
+# 4 through 10
+your_set = {4, 5, 6, 7, 8, 9, 10}
+
+# .difference
+# .discard
+# .difference_update
+# .difference_update()
+# .intersection()
+# .isdisjoint()
+# .issubset()
+# .issuperset()
+# .union()
+
+# Conditional Logic
+
+if condition:
+    return result
+elif condition:
+    return result
+# else
+else:
+    return else_result
+
+is_old = input('Are you 18 or over?')
+is_licensed = input('Are you licensed?')
+
+if is_old == 'yes' and is_licensed == 'yes':
+    print('You meet the requirements!')
+else:
+    print('Sorry, you do not meet the requirements!')
