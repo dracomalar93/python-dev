@@ -429,3 +429,21 @@ if is_old == 'yes' and is_licensed == 'yes':
     print('You meet the requirements!')
 else:
     print('Sorry, you do not meet the requirements!')
+
+
+# Ternary Operators
+if condition:
+    return result
+elif condition:
+    return result
+
+# condition_if_true if condition else condition_if_else
+
+is_friend = True
+can_message = "message allowed" if is_friend else "message not allowed"
+print(can_message)  # message allowed
+
+is_friend = False
+print(can_message)  # message not allowed
+
+# Short Circuiting
